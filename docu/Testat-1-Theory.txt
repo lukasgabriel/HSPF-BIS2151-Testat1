@@ -1,0 +1,36 @@
+Task 1:
+If you read this, task 1 is finished.
+
+Task 2: Bad identifiers
+
+03/17/2020  
+is indeed a bad variable name. The '/' char is reserved for arithmetic operations ( here division ) and is interpreted as such. Forbidden to use in variable declarations
+
+CourseNumberJava
+does not follow the "lowerCamelCase"-notation that is used for easy readability. Better: javaCourseNumber
+
+best grade in SS20
+spaces are definitely not allowed in variable declaration and would throw an error.
+
+1stAttestation
+declared variables cannot start with a digit number.
+
+fußgröße
+I assume characters like 'ß' and 'ö' that are not universal should not be used when declaring a variable.
+
+bestaveragerating
+does not follow the "lowerCamelCase"-notation. Better: bestAverageRating.
+
+netto+VAT
+The plus operator is reserved for arithmetic operations and cannot be used when declaring variables.
+
+s
+Is no meaningful word and thus should not be used when declaring a variable. It is not clear to what a value 's' might referece.
+
+Task 3:
+
+double creditAccountBalance;
+int orderedArticleQuantity;
+String vehicleTyreDot;
+float monthlyInstalmentRate;
+String matriculationNumber;
