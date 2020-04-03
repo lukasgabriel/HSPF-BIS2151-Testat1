@@ -1,8 +1,10 @@
 # virus_calculator.py
 
+
 def print_table(pop, weeks, rate, mort):
     # Print initial output
-    print(f'Viruscalculator will calculate with {pop} persons at start and run for {weeks} weeks with an increase of infections of {round((rate - 1) * 100, 1)}% and a mortality of {round((mort - 1) * 100, 1)}%:')
+    print(
+        f'Viruscalculator will calculate with {pop} persons at start and run for {weeks} weeks with an increase of infections of {round((rate - 1) * 100, 1)}% and a mortality of {round((mort - 1) * 100, 1)}%:')
 
     # Print header row
     print('Week   Infections   Deaths')
@@ -39,7 +41,8 @@ def parse_input(user_input):
 
 def main():
     # Query user for input.
-    user_input = input('Please enter the values for the initial infected population, the runtime in weeks and the infection and mortality rate in percent. \n')
+    user_input = input(
+        'Please enter the values for the initial infected population, the runtime in weeks and the infection and mortality rate in percent. \n')
     # Try to parse the input.
     d = parse_input(user_input)
     # Call print_table using the kwargs in the dict.
