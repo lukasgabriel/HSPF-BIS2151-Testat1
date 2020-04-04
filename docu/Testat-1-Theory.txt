@@ -12,7 +12,7 @@ CourseNumberJava
 does not follow the "lowerCamelCase"-notation that is used for easy readability. Better: javaCourseNumber
 
 best grade in SS20
-spaces are definitely not allowed in variable declaration and would throw an error. Better: best_grade_in_SS20.
+spaces are definitely not allowed in variable declaration and would throw an error. Better: bestGradeInSS20.
 
 1stAttestation
 declared variables cannot start with a digit number. Better: firstAttestation.
