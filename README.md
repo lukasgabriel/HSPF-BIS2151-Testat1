@@ -59,3 +59,4 @@ Week   Infections   Deaths
 25       23305       816
 26       29248       1024
 ```
+Our submission was graded with 5.75 out of 6 possible points.
