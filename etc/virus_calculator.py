@@ -4,7 +4,7 @@
 def print_table(pop, weeks, rate, mort):
     # Print initial output
     print(
-        f'Viruscalculator will calculate with {pop} persons at start and run for {weeks} weeks with an increase of infections of {round((rate - 1) * 100, 1)}% and a mortality of {round((mort - 1) * 100, 1)}%:')
+        f'Viruscalculator will calculate with {pop} persons at start and run for {weeks} weeks with an increase of infections of {round((float(rate) - 1) * 100, 1)}% and a mortality of {round((float(mort) - 1) * 100, 1)}%:')
 
     # Print header row
     print('Week   Infections   Deaths')
@@ -22,6 +22,7 @@ def parse_input(user_input):
     params = ('pop', 'weeks', 'rate', 'mort')
 
     # Strip trailing & leading whitespaces and then split between values.
+    user_input = user_input.replace(',', '.')
     l = user_input.strip().split()
 
     # Simple type validation
@@ -31,9 +32,10 @@ def parse_input(user_input):
         rate = 1 + float(l[2]) / 100
         mort = float(l[3]) / 100
         l = (pop, weeks, rate, mort)
-    except:
+    except Exception as e:
         print('\n Invalid input. Please try again. \n')
         main()
+        return
 
     # Zip it and ship it
     return dict(zip(params, l))
