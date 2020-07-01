@@ -4,7 +4,7 @@
 def print_table(pop, weeks, rate, mort):
     # Print initial output
     print(
-        f'Viruscalculator will calculate with {pop} persons at start and run for {weeks} weeks with an increase of infections of {round((float(rate) - 1) * 100, 1)}% and a mortality of {round((float(mort) - 1) * 100, 1)}%:')
+        f'Viruscalculator will calculate with {pop} persons at start and run for {weeks} weeks with an increase of infections of {round((float(rate) - 1) * 100, 1)}% and a mortality of {round((float(mort)) * 100, 1)}%:')
 
     # Print header row
     print('Week   Infections   Deaths')
